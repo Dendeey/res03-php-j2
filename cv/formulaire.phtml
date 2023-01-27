@@ -1,0 +1,51 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">  
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <link href="formulaire.css" rel="stylesheet">
+    </head>
+    <body>
+        <main id = "wholepage">
+            <section>
+                <form action="cv.phtml" method="POST">
+                    <!-- INFORMATIONS -->
+                    <?php
+                    require 'form-file-cut/informations.phtml';
+                    ?>
+                    <!-- LANGS -->
+                    <?php
+                    require 'form-file-cut/langs.phtml';
+                    ?>
+                    <button>
+                        <input type="submit" value="ENVOYER">
+                    </button>
+            </section>
+            <section>
+                    <!-- SKILLS / PROGRAMMING LANGUAGES -->
+                    <?php
+                    require 'form-file-cut/skills.phtml';
+                    ?>
+                    <!-- FRAMEWORKS -->
+                    <?php
+                    require 'form-file-cut/frameworks.phtml';
+                    ?>
+                    <!-- SOFTWARES -->
+                    <?php
+                    require 'form-file-cut/software.phtml';
+                    ?>
+                    <!-- COLORS -->
+                    <?php
+                    require 'form-file-cut/color.phtml';
+                    ?>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

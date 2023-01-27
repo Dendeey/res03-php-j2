@@ -1,0 +1,38 @@
+#wholepage
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1
+{
+    color: #24527c;
+    font-size: 25px;
+}
+
+h2
+{
+    color: #24527c;
+    font-size: 18px;    
+}
+
+button
+{
+    margin-left: 150px;
+}
+
+button > input
+{
+    background-color: #24527c; 
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    
+    
+}
+
+fieldset
+{
+    border: 0;
+}
