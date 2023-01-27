@@ -1,3 +1,7 @@
+<?php
+require 'index.php';
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,58 +14,50 @@
     <body>
         <section id ="wholepage">
             <section id = "top">
-                <h1><?php $formArray['prenom'] ?></h1><br>
+                <h1><?php echo $formArray['prenom']; ?> <?php echo $formArray['nom']; ?></h1><br>
                 <h1>Intitul&eacute; du poste</h1>
             </section>
             <section id = "left">
                 <h2>Informations</h2>
                     <h3>Contact</h3>
-                        <p>Email</p>
-                            
-                        <p>T&eacute;l&eacute;phone</p>
-                        <p>Linkedin</p>
-                        <p>GitHub</p>
+                        <p>Email: <?php echo $formArray['email']; ?></p>
+                        <p>T&eacute;l&eacute;phone: <?php echo $formArray['phone']; ?></p>
+                        <p>Linkedin: <?php echo $formArray['linkedin']; ?></p>
                     <h3>Biographie</h3>
-                        <p></p>
+                        <p><?php echo $formArray['biographie']; ?></p>
                     <h3>Loisirs</h3>
                         <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><?php echo $formArray['loisir1']; ?></li>
+                            <li><?php echo $formArray['loisir2']; ?></li>
+                            <li><?php echo $formArray['loisir3']; ?></li>
+                            <li><?php echo $formArray['loisir4']; ?></li>
                         </ol>
             </section>
             <section id = "right">
                 <h2>COMP&#201;TENCES</h2>
                     <h3>Langages des programmation</h3>
                         <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <?php foreach($formArray['prog'] as $progs){ ?>
+                            <li><?php echo $progs; ?></li>
+                            <?php }; ?>
                         </ol>
                     <h3>Frameworks & Librairies</h3>
                         <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <?php foreach($formArray['frameworks'] as $framework){ ?>
+                            <li><?php echo $framework; ?></li>
+                            <?php }; ?>
                         </ol>
                     <h3>Logiciels</h3>
                         <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <?php foreach($formArray['softwares'] as $software){ ?>
+                            <li><?php echo $software; ?></li>
+                            <?php }; ?>
                         </ol>
                     <h3>Langues</h3>
                         <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <?php foreach($formArray['langs'] as $lang){ ?>
+                            <li><?php echo $lang; ?></li>
+                            <?php }; ?>
                         </ol>
             </section>
         </section>

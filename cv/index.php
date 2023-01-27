@@ -37,69 +37,29 @@ if (isset($_POST['loisir4'])) {
 
 // LANGS 
 
-if(isset($_POST['francais'])){
-    $formArray['francais'] = $_POST['francais'];
-}
-if(isset($_POST['anglais'])){
-    $formArray['anglais'] = $_POST['anglais'];
-}
-if(isset($_POST['arabe'])){
-    $formArray['arabe'] = $_POST['arabe'];
-}
-if(isset($_POST['breton'])){
-    $formArray['breton'] = $_POST['breton'];
-}
-if(isset($_POST['espagnol'])){
-    $formArray['espagnol'] = $_POST['espagnol'];
+if(isset($_POST['langs'])){
+    $formArray['langs'] = $_POST['langs'];
 }
 
 // SKILLS 
 // PROGRAMMING LANGUAGES
 
-if(isset($_POST['html'])){
-    $formArray['html'] = $_POST['html'];
+if(isset($_POST['prog'])){
+    $formArray['prog'] = $_POST['prog'];
 }
-if(isset($_POST['css'])){
-    $formArray['css'] = $_POST['css'];
-}
-if(isset($_POST['js'])){
-    $formArray['js'] = $_POST['js'];
-}
-if(isset($_POST['php'])){
-    $formArray['php'] = $_POST['php'];
-}
-if(isset($_POST['sql'])){
-    $formArray['sql'] = $_POST['sql'];
-}
+
 
 // FRAMEWORKS
 
-if(isset($_POST['sass'])){
-    $formArray['sass'] = $_POST['sass'];
+if(isset($_POST['frameworks'])){
+    $formArray['frameworks'] = $_POST['frameworks'];
 }
-if(isset($_POST['bootstrap'])){
-    $formArray['bootstrap'] = $_POST['bootstrap'];
-}
-if(isset($_POST['symphony'])){
-    $formArray['symphony'] = $_POST['symphony'];
-}
-if(isset($_POST['laravel'])){
-    $formArray['laravel'] = $_POST['laravel'];
-}
+
 
 // SOFTWARE
 
-if(isset($_POST['photoshop'])){
-    $formArray['photoshop'] = $_POST['photoshop'];
-}
-if(isset($_POST['illusrator'])){
-    $formArray['illusrator'] = $_POST['illusrator'];
-}
-if(isset($_POST['xd'])){
-    $formArray['xd'] = $_POST['xd'];
-}
-if(isset($_POST['figma'])){
-    $formArray['figma'] = $_POST['figma'];
+if(isset($_POST['softwares'])){
+    $formArray['softwares'] = $_POST['softwares'];
 }
 
 // COLOR
